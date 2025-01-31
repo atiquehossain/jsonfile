@@ -34,7 +34,7 @@
           "type": "CircleAvatar",
           "backgroundImage": {
             "type": "NetworkImage",
-            "url": "https://raw.githubusercontent.com/atiquehossain/jsonfile/refs/heads/main/json"
+            "url": "https://pbs.twimg.com/profile_images/869437760372785153/vl1PZLxZ_400x400.jpg"
           },
           "radius": 60
         }
