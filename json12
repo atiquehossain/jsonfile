@@ -1,0 +1,170 @@
+{
+  "type": "Scaffold",
+  "backgroundColor": "#FFFFFF",
+  "appBar": {
+    "backgroundColor": "#6200EE",
+    "title": {
+      "text": "My Resume",
+      "style": {
+        "color": "#FFFFFF",
+        "fontSize": 24,
+        "fontWeight": "bold"
+      }
+    },
+    "centerTitle": true
+  },
+  "body": {
+    "type": "Padding",
+    "padding": {
+      "all": 20
+    },
+    "child": {
+      "type": "Column",
+      "crossAxisAlignment": "center",
+      "mainAxisAlignment": "center",
+      "children": [
+        {
+          "type": "CircleAvatar",
+          "backgroundImage": {
+            "type": "NetworkImage",
+            "url": "https://pbs.twimg.com/profile_images/869437760372785153/vl1PZLxZ_400x400.jpg"
+          },
+          "radius": 70
+        },
+        {
+          "type": "SizedBox",
+          "height": 20
+        },
+        {
+          "type": "Text",
+          "text": "Atique",
+          "style": {
+            "color": "#424242",
+            "fontSize": 26,
+            "fontWeight": "bold"
+          }
+        },
+        {
+          "type": "Text",
+          "text": "Software Engineer at TechHub Bangladesh",
+          "style": {
+            "color": "#616161",
+            "fontSize": 18
+          }
+        },
+        {
+          "type": "SizedBox",
+          "height": 30
+        },
+        {
+          "type": "Padding",
+          "padding": {
+            "left": 15,
+            "right": 15
+          },
+          "child": {
+            "type": "TextField",
+            "hintText": "Enter your message",
+            "style": {
+              "color": "#424242",
+              "fontSize": 18
+            }
+          }
+        },
+        {
+          "type": "SizedBox",
+          "height": 20
+        },
+        {
+          "type": "ElevatedButton",
+          "child": {
+            "type": "Text",
+            "text": "Send Message",
+            "style": {
+              "color": "#FFFFFF",
+              "fontSize": 16
+            }
+          },
+          "onPressed": {
+            "action": "send_message"
+          },
+          "style": {
+            "backgroundColor": "#6200EE",
+            "padding": {
+              "vertical": 10,
+              "horizontal": 20
+            },
+            "shape": {
+              "type": "RoundedRectangleBorder",
+              "borderRadius": 12
+            }
+          }
+        },
+        {
+          "type": "SizedBox",
+          "height": 20
+        },
+        {
+          "type": "Row",
+          "mainAxisAlignment": "center",
+          "children": [
+            {
+              "type": "ElevatedButton",
+              "child": {
+                "type": "Text",
+                "text": "LinkedIn",
+                "style": {
+                  "color": "#FFFFFF",
+                  "fontSize": 16
+                }
+              },
+              "onPressed": {
+                "action": "open_linkedin"
+              },
+              "style": {
+                "backgroundColor": "#0077B5",
+                "padding": {
+                  "vertical": 10,
+                  "horizontal": 20
+                },
+                "shape": {
+                  "type": "RoundedRectangleBorder",
+                  "borderRadius": 12
+                }
+              }
+            },
+            {
+              "type": "SizedBox",
+              "width": 10
+            },
+            {
+              "type": "ElevatedButton",
+              "child": {
+                "type": "Text",
+                "text": "GitHub",
+                "style": {
+                  "color": "#FFFFFF",
+                  "fontSize": 16
+                }
+              },
+              "onPressed": {
+                "action": "open_github"
+              },
+              "style": {
+                "backgroundColor": "#24292E",
+                "padding": {
+                  "vertical": 10,
+                  "horizontal": 20
+                },
+                "shape": {
+                  "type": "RoundedRectangleBorder",
+                  "borderRadius": 12
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
