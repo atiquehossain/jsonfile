@@ -4,20 +4,13 @@
   "appBar": {
     "backgroundColor": "#6200EE",
     "title": {
-      "text": "Flutter UI",
+      "text": "My Resume",
       "style": {
         "color": "#FFFFFF",
         "fontSize": 24,
         "fontWeight": "bold"
       }
-    },
-    "actions": [
-      {
-        "type": "IconButton",
-        "icon": "Icons.settings",
-        "onPressed": "showSettings"
-      }
-    ]
+    }
   },
   "body": {
     "type": "Column",
@@ -34,7 +27,7 @@
           "type": "CircleAvatar",
           "backgroundImage": {
             "type": "NetworkImage",
-            "url": "https://example.com/avatar.jpg"
+            "url": "https://pbs.twimg.com/profile_images/869437760372785153/vl1PZLxZ_400x400.jpg"
           },
           "radius": 60
         }
@@ -47,7 +40,7 @@
         "type": "Center",
         "child": {
           "type": "Text",
-          "text": "Welcome to Flutter!",
+          "text": "Atique",
           "style": {
             "color": "#6200EE",
             "fontSize": 26,
@@ -69,24 +62,10 @@
         },
         "child": {
           "type": "TextField",
-          "hintText": "Enter your name",
+          "hintText": "Enter your contact",
           "style": {
             "color": "#000000",
             "fontSize": 18
-          },
-          "decoration": {
-            "hintStyle": {
-              "color": "#B0B0B0",
-              "fontSize": 16
-            },
-            "filled": true,
-            "fillColor": "#FFFFFF",
-            "border": {
-              "type": "OutlineInputBorder",
-              "borderRadius": {
-                "radius": 25
-              }
-            }
           }
         }
       },
@@ -113,7 +92,7 @@
         },
         "child": {
           "type": "Text",
-          "text": "Flutter is awesome!",
+          "text": "Software Engineer at TechHub Bangladesh",
           "style": {
             "color": "#FFFFFF",
             "fontSize": 20,
@@ -131,12 +110,11 @@
         "children": [
           {
             "type": "Checkbox",
-            "value": false,
-            "onChanged": "onCheckboxChanged"
+            "value": true
           },
           {
             "type": "Text",
-            "text": "I agree to the terms",
+            "text": "Available for work",
             "style": {
               "color": "#6200EE",
               "fontSize": 18
@@ -154,12 +132,11 @@
         "children": [
           {
             "type": "Switch",
-            "value": true,
-            "onChanged": "onSwitchChanged"
+            "value": true
           },
           {
             "type": "Text",
-            "text": "Enable notifications",
+            "text": "Open to freelance",
             "style": {
               "color": "#6200EE",
               "fontSize": 18
