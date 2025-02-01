@@ -1,0 +1,193 @@
+{
+  "type": "Scaffold",
+  "backgroundColor": "#F5F5F5",
+  "appBar": {
+    "backgroundColor": "#673AB7",
+    "title": {
+      "text": "My Resume",
+      "style": {
+        "color": "#FFFFFF",
+        "fontSize": 24,
+        "fontWeight": "bold"
+      }
+    },
+    "centerTitle": true
+  },
+  "body": {
+    "type": "Padding",
+    "padding": {
+      "all": 20
+    },
+    "child": {
+      "type": "Column",
+      "crossAxisAlignment": "center",
+      "mainAxisAlignment": "start",
+      "children": [
+        {
+          "type": "CircleAvatar",
+          "backgroundImage": {
+            "type": "NetworkImage",
+            "url": "https://pbs.twimg.com/profile_images/869437760372785153/vl1PZLxZ_400x400.jpg"
+          },
+          "radius": 70
+        },
+        {
+          "type": "SizedBox",
+          "height": 20
+        },
+        {
+          "type": "Text",
+          "text": "Atique",
+          "style": {
+            "color": "#311B92",
+            "fontSize": 28,
+            "fontWeight": "bold"
+          }
+        },
+        {
+          "type": "Text",
+          "text": "Software Engineer at TechHub Bangladesh",
+          "style": {
+            "color": "#757575",
+            "fontSize": 18,
+            "fontWeight": "medium"
+          }
+        },
+        {
+          "type": "SizedBox",
+          "height": 30
+        },
+        {
+          "type": "Padding",
+          "padding": {
+            "left": 20,
+            "right": 20
+          },
+          "child": {
+            "type": "TextField",
+            "hintText": "Enter your contact",
+            "style": {
+              "color": "#000000",
+              "fontSize": 18
+            }
+          }
+        },
+        {
+          "type": "SizedBox",
+          "height": 20
+        },
+        {
+          "type": "Container",
+          "padding": {
+            "all": 15
+          },
+          "margin": {
+            "top": 15
+          },
+          "decoration": {
+            "color": "#512DA8",
+            "borderRadius": {
+              "radius": 12
+            }
+          },
+          "child": {
+            "type": "Text",
+            "text": "Available for Work",
+            "style": {
+              "color": "#FFFFFF",
+              "fontSize": 20,
+              "fontWeight": "bold"
+            }
+          }
+        },
+        {
+          "type": "SizedBox",
+          "height": 20
+        },
+        {
+          "type": "Row",
+          "mainAxisAlignment": "center",
+          "children": [
+            {
+              "type": "Checkbox",
+              "value": false,
+              "onChanged": "toggleCheckbox"
+            },
+            {
+              "type": "Text",
+              "text": "Looking for Opportunities",
+              "style": {
+                "color": "#311B92",
+                "fontSize": 16
+              }
+            }
+          ]
+        },
+        {
+          "type": "SizedBox",
+          "height": 10
+        },
+        {
+          "type": "Row",
+          "mainAxisAlignment": "center",
+          "children": [
+            {
+              "type": "Text",
+              "text": "Available:",
+              "style": {
+                "color": "#311B92",
+                "fontSize": 16,
+                "fontWeight": "bold"
+              }
+            },
+            {
+              "type": "Switch",
+              "value": true,
+              "onChanged": "toggleAvailability"
+            }
+          ]
+        },
+        {
+          "type": "SizedBox",
+          "height": 30
+        },
+        {
+          "type": "Image",
+          "url": "https://example.com/flutter_logo.png",
+          "fit": "cover",
+          "height": 100
+        },
+        {
+          "type": "SizedBox",
+          "height": 20
+        },
+        {
+          "type": "ElevatedButton",
+          "child": {
+            "type": "Text",
+            "text": "View GitHub",
+            "style": {
+              "color": "#FFFFFF",
+              "fontSize": 16,
+              "fontWeight": "bold"
+            }
+          },
+          "onPressed": {
+            "action": "open_github"
+          },
+          "style": {
+            "backgroundColor": "#24292E",
+            "padding": {
+              "vertical": 12,
+              "horizontal": 24
+            },
+            "shape": {
+              "type": "RoundedRectangleBorder",
+              "borderRadius": 15
+            }
+          }
+        }
+      ]
+    }
+  }
+}
