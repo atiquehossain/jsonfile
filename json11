@@ -1,8 +1,8 @@
 {
   "type": "Scaffold",
-  "backgroundColor": "#F5F5F5",
+  "backgroundColor": "#FFFFFF",
   "appBar": {
-    "backgroundColor": "#673AB7",
+    "backgroundColor": "#BB86FC",
     "title": {
       "text": "My Resume",
       "style": {
@@ -39,8 +39,8 @@
           "type": "Text",
           "text": "Atique",
           "style": {
-            "color": "#311B92",
-            "fontSize": 28,
+            "color": "#424242",
+            "fontSize": 26,
             "fontWeight": "bold"
           }
         },
@@ -48,9 +48,8 @@
           "type": "Text",
           "text": "Software Engineer at TechHub Bangladesh",
           "style": {
-            "color": "#757575",
-            "fontSize": 18,
-            "fontWeight": "medium"
+            "color": "#616161",
+            "fontSize": 18
           }
         },
         {
@@ -60,14 +59,14 @@
         {
           "type": "Padding",
           "padding": {
-            "left": 20,
-            "right": 20
+            "left": 15,
+            "right": 15
           },
           "child": {
             "type": "TextField",
             "hintText": "Enter your contact",
             "style": {
-              "color": "#000000",
+              "color": "#424242",
               "fontSize": 18
             }
           }
@@ -81,11 +80,8 @@
           "padding": {
             "all": 15
           },
-          "margin": {
-            "top": 15
-          },
           "decoration": {
-            "color": "#512DA8",
+            "color": "#EDE7F6",
             "borderRadius": {
               "radius": 12
             }
@@ -94,8 +90,8 @@
             "type": "Text",
             "text": "Available for Work",
             "style": {
-              "color": "#FFFFFF",
-              "fontSize": 20,
+              "color": "#424242",
+              "fontSize": 18,
               "fontWeight": "bold"
             }
           }
@@ -111,13 +107,13 @@
             {
               "type": "Checkbox",
               "value": false,
-              "onChanged": "toggleCheckbox"
+              "onChanged": "onCheckboxChanged"
             },
             {
               "type": "Text",
-              "text": "Looking for Opportunities",
+              "text": "I agree to the terms",
               "style": {
-                "color": "#311B92",
+                "color": "#616161",
                 "fontSize": 16
               }
             }
@@ -132,18 +128,17 @@
           "mainAxisAlignment": "center",
           "children": [
             {
-              "type": "Text",
-              "text": "Available:",
-              "style": {
-                "color": "#311B92",
-                "fontSize": 16,
-                "fontWeight": "bold"
-              }
-            },
-            {
               "type": "Switch",
               "value": true,
-              "onChanged": "toggleAvailability"
+              "onChanged": "onSwitchChanged"
+            },
+            {
+              "type": "Text",
+              "text": "Enable notifications",
+              "style": {
+                "color": "#616161",
+                "fontSize": 16
+              }
             }
           ]
         },
@@ -155,7 +150,7 @@
           "type": "Image",
           "url": "https://example.com/flutter_logo.png",
           "fit": "cover",
-          "height": 100
+          "height": 80
         },
         {
           "type": "SizedBox",
@@ -168,22 +163,21 @@
             "text": "View GitHub",
             "style": {
               "color": "#FFFFFF",
-              "fontSize": 16,
-              "fontWeight": "bold"
+              "fontSize": 16
             }
           },
           "onPressed": {
             "action": "open_github"
           },
           "style": {
-            "backgroundColor": "#24292E",
+            "backgroundColor": "#4A4A4A",
             "padding": {
-              "vertical": 12,
-              "horizontal": 24
+              "vertical": 10,
+              "horizontal": 20
             },
             "shape": {
               "type": "RoundedRectangleBorder",
-              "borderRadius": 15
+              "borderRadius": 12
             }
           }
         }
