@@ -1,0 +1,156 @@
+{
+  "type": "Scaffold",
+  "backgroundColor": "#EDE7F6",
+  "appBar": {
+    "backgroundColor": "#512DA8",
+    "title": {
+      "text": "My Resume",
+      "style": {
+        "color": "#FFFFFF",
+        "fontSize": 24,
+        "fontWeight": "bold"
+      }
+    },
+    "centerTitle": true
+  },
+  "body": {
+    "type": "Padding",
+    "padding": {
+      "all": 20
+    },
+    "child": {
+      "type": "Padding",
+      "padding": {
+        "all": 10
+      },
+      "child": {
+        "type": "Column",
+        "crossAxisAlignment": "center",
+        "mainAxisAlignment": "start",
+        "children": [
+          {
+            "type": "SizedBox",
+            "height": 20
+          },
+          {
+            "type": "CircleAvatar",
+            "backgroundImage": {
+              "type": "NetworkImage",
+              "url": "https://pbs.twimg.com/profile_images/869437760372785153/vl1PZLxZ_400x400.jpg"
+            },
+            "radius": 70
+          },
+          {
+            "type": "SizedBox",
+            "height": 20
+          },
+          {
+            "type": "Text",
+            "text": "Atique",
+            "style": {
+              "color": "#311B92",
+              "fontSize": 28,
+              "fontWeight": "bold"
+            }
+          },
+          {
+            "type": "Text",
+            "text": "Software Engineer at TechHub Bangladesh",
+            "style": {
+              "color": "#512DA8",
+              "fontSize": 18,
+              "fontWeight": "medium"
+            }
+          },
+          {
+            "type": "SizedBox",
+            "height": 30
+          },
+          {
+            "type": "TextField",
+            "hintText": "Enter your contact",
+            "style": {
+              "color": "#000000",
+              "fontSize": 18
+            }
+          },
+          {
+            "type": "SizedBox",
+            "height": 20
+          },
+          {
+            "type": "Container",
+            "padding": {
+              "all": 20
+            },
+            "margin": {
+              "top": 15
+            },
+            "decoration": {
+              "color": "#7E57C2",
+              "borderRadius": {
+                "radius": 12
+              }
+            },
+            "child": {
+              "type": "Text",
+              "text": "Available for work",
+              "style": {
+                "color": "#FFFFFF",
+                "fontSize": 20,
+                "fontWeight": "bold"
+              }
+            }
+          },
+          {
+            "type": "SizedBox",
+            "height": 20
+          },
+          {
+            "type": "Switch",
+            "value": true,
+            "onChanged": "toggleAvailability"
+          },
+          {
+            "type": "SizedBox",
+            "height": 40
+          },
+          {
+            "type": "Image",
+            "url": "https://example.com/flutter_logo.png",
+            "fit": "cover",
+            "height": 100
+          },
+          {
+            "type": "SizedBox",
+            "height": 20
+          },
+          {
+            "type": "ElevatedButton",
+            "child": {
+              "type": "Text",
+              "text": "GitHub",
+              "style": {
+                "color": "#FFFFFF"
+              }
+            },
+            "onPressed": {
+              "action": "open_github"
+            },
+            "style": {
+              "backgroundColor": "#333333",
+              "padding": {
+                "vertical": 12,
+                "horizontal": 24
+              },
+              "shape": {
+                "type": "RoundedRectangleBorder",
+                "borderRadius": 15
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}
